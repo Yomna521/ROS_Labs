@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <arg name="name" default="Rose" />
+    <arg name="age" default="20"/>
+    <arg name="height" default="170"/>
+
+    <node name="user_info_driver" pkg="exercise_three" type="user_info_driver.cpp" output="screen"/>
+    <node name="data_processing" pkg="exercise_three" type="data_processing.cpp" output="screen"/>
+
+</launch>
+
